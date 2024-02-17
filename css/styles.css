@@ -1,0 +1,242 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Kalam', cursive;
+font-family: 'Roboto', sans-serif; */
+
+:root {
+  --primary-text-color: #2c2c2c;
+  --input-text-color: #505050;
+  --accent-color-first: #bbf330;
+  --accent-color-second: #ffe550;
+  --body-bgc: #fefefe;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--body-bgc);
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+::placeholder {
+  color: var(--input-text-color);
+  opacity: 1;
+}
+
+/* *header */
+.header {
+  box-shadow: 0 4px 24px 0 rgba(105, 105, 105, 0.1);
+  background: #fefefe;
+}
+
+.header-link {
+  font-size: 14px;
+  color: currentColor;
+}
+.header-link:hover,
+.header-link:focus {
+  text-decoration: underline;
+  color: var(--accent-color-first);
+}
+
+.header-button {
+  color: currentColor;
+  font-weight: 500;
+  font-size: 13px;
+  background-color: var(--accent-color-first);
+  border-style: none;
+  border-radius: 30px;
+  padding: 6px 17px;
+  width: 98px;
+  height: 32px;
+}
+.header-button:hover,
+.header-button:focus {
+  background-color: var(--accent-color-second);
+}
+
+/* *main */
+/* ^hero-section */
+.hero-header {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2;
+}
+.hero-button {
+  color: currentColor;
+  font-weight: 500;
+  font-size: 13px;
+  background-color: var(--accent-color-first);
+  border-style: none;
+  border-radius: 30px;
+  padding: 6px 17px;
+  width: 98px;
+  height: 32px;
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--accent-color-second);
+}
+/* ^feauters-section */
+.feauters-header {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.2;
+}
+.feauters-options-header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+}
+.feauters-button {
+  font-weight: 500;
+  font-size: 13px;
+  color: #2c2c2c;
+
+  border: 2px solid #7eb101;
+  border-radius: 30px;
+  background-color: #fff;
+  padding: 10px 20px;
+  width: 106px;
+  height: 40px;
+}
+.feauters-button:hover,
+.feauters-button:focus {
+  background-color: var(--accent-color-first);
+  border-color: var(--accent-color-first);
+}
+/* ^favorites-section */
+.favorites-header {
+  font-weight: 700;
+  font-size: 42px;
+  text-align: center;
+}
+.favorites-text {
+  text-align: center;
+}
+/* ^reviews-section */
+.reviews-header {
+  font-weight: 700;
+  font-size: 42px;
+}
+.reviews-text {
+  font-weight: 700;
+  font-size: 18px;
+}
+.reviews-name {
+  font-weight: 500;
+  font-size: 14px;
+}
+.reviews-name-text {
+  font-size: 14px;
+}
+/* ^subscribe-section */
+.subsc-header {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.2;
+}
+.subsc-input {
+  font-size: 12px;
+
+  border: 0.8541666269302368px solid #ffe550;
+  border-radius: 30px;
+  padding: 10px;
+  width: 395px;
+  height: 42px;
+  background: #fefefe;
+}
+.subsc-input-btn {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  color: inherit;
+  width: 103px;
+  height: 42px;
+
+  border-radius: 30px;
+  background-color: var(--accent-color-first);
+  border-style: none;
+}
+.subsc-input-btn:hover,
+.subsc-input-btn:focus {
+  background-color: var(--accent-color-second);
+}
+/* *footer */
+/* .header-link {
+  font-size: 14px;
+  color: currentColor;
+}
+.header-link:hover,
+.header-link:focus {
+  text-decoration: underline;
+  color: var(--accent-color-first);
+} */
+
+.footer {
+  box-shadow: 0 -4px 24px 0 rgba(105, 105, 105, 0.1);
+  background: #fefefe;
+}
+.footer-link {
+  font-size: 14px;
+  color: currentColor;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  text-decoration: underline;
+  color: var(--accent-color-first);
+}
+.footer-subsc-call {
+  font-weight: 500;
+}
+.footer-input {
+  border: 0.8541666269302368px solid #ffe550;
+  border-radius: 30px;
+  padding: 10px;
+  width: 279px;
+  height: 42px;
+  background: #fefefe;
+}
+
+.footer-btn {
+  font-weight: 500;
+  font-size: 13px;
+  color: #2c2c2c;
+
+  border: 0.8541666269302368px solid #7eb101;
+  border-radius: 30px;
+  padding: 10px 20px;
+  width: 103px;
+  height: 42px;
+
+  background-color: #fff;
+}
+.footer-btn:hover,
+.footer-btn:focus {
+  border-color: var(--accent-color-second);
+}
+.footer-text {
+  font-size: 12px;
+}
+.footer-text-link {
+  text-decoration: underline;
+  color: #7eb101;
+}
+.footer-policy-link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  text-decoration: underline;
+  color: #7eb101;
+}
+
+.footer-rights-text {
+  font-size: 12px;
+}
