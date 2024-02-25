@@ -12,6 +12,7 @@ ul, ol {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 button {
@@ -24,6 +25,120 @@ img {
 
 body {
     font-family: Roboto, sans-serif;
+    font-weight: 400;
     font-size: 16px;
+    color: #2c2c2c;
+    background-color: #fefefe;
 }
+/* =============== Header section =============== */
+.nav-link {
+    font-size: 14px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #bbf330;
+    text-decoration: underline;
+}
+
+.button {
+    display: block;
+    min-width: 98px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    color: inherit;
+    border-radius: 30px;
+}
+
+.main-button {
+    background-color: #bbf330;
+    border: 0;
+    padding: 6px 18px;
+    max-height: 32px;
+}
+
+/* =============== Hero section =============== */
+
+.main-title {
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.hero-description {
+    line-height: 1.5;
+}
+
+/* =============== Our offerings section =============== */
+
+.title {
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.offerings-description {
+    line-height: 1.5;
+}
+
+.offerings-subtitle {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.offerings-list-description {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.secondary-button {
+    background-color: #ffffff;
+    border: 2px solid #7eb101;
+    padding: 10px 22px;
+    max-height: 40px;
+}
+
+/* =============== Our Favorites section =============== */
+
+/* =============== Customer`s reviews section =============== */
+
+.reviews-description {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.username {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.username-description {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* =============== Subscribe section =============== */
+
+.footer-suscribe-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-subscribe-description {
+    font-size: 12px;
+}
+
+.privacy-link {
+    font-size: 12px;
+    text-decoration: underline;
+    color: #7eb101;
+}
+
+.rights-description {
+    font-size: 12px;
+}
+
+
+
 
