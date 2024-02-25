@@ -30,6 +30,11 @@ body {
     color: #2c2c2c;
     background-color: #fefefe;
 }
+
+.container {
+    max-width: 1248px;
+    margin: 0 auto; 
+}
 /* =============== Header section =============== */
 .nav-link {
     font-size: 14px;
