@@ -12,8 +12,8 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="container">
-      <a href="./index.html"><img src="./img/logo.png" alt="logo" width="66" height="52"></a>
+    <div class="container header-container">
+      <a class="logo" href="./index.html"><img src="./img/logo.png" alt="logo" width="66" height="52"></a>
       <nav class="page-nav">
         <ul class="page-nav-list">
           <li class="nav-list-item"><a class="nav-link" href="./index.html">Home</a></li>
@@ -22,44 +22,61 @@
           <li class="nav-list-item"><a class="nav-link" href="#menu">Menu</a></li>
           <li class="nav-list-item"><a class="nav-link" href="">Contact</a></li>
         </ul>
-        <button class="button main-button" type="button">Order Now</button>
       </nav>
+      <button class="button main-button" type="button">Order Now</button>
     </div>
   </header>
   <main>
     <section class="hero">
-      <div class="container">
-        <h1 class="main-title">Enjoy Your Favorite Food From Anywhere</h1>
-        <p class="hero-description">With just a few clicks, you can have your favorite meals delivered straight to your
-          doorstep, no matter where you
-          are.
-          Order now and enjoy a hassle-free and delicious meal from the comfort of your own home.</p>
-        <button class="button main-button" type="button">Order Now</button>
-        <img src="./img/hero.png" alt="Picture with salad">
+      <div class="container hero-container">
+        <div class="hero-main">
+          <h1 class="main-title">Enjoy Your Favorite Food From Anywhere</h1>
+          <p class="hero-description">With just a few clicks, you can have your favorite meals delivered straight to your
+            doorstep, no matter where you
+            are.
+            Order now and enjoy a hassle-free and delicious meal from the comfort of your own home.</p>
+          <button class="button main-button" type="button">Order Now</button>
+        </div>
+        <div class="image-thumb">
+          <img class="hero-image" src="./img/hero.png" alt="Picture with salad" width="528" height="528">
+        </div>
+        
       </div>
     </section>
     <section class="offerings">
-      <div class="container">
-        <img src="./img/apple.png" alt="Picture with apple">
-        <h2 class="title">What’s Special About Our Offerings</h2>
-        <p class="offerings-description">With our platform, you can browse through a diverse selection of cuisines and local
-          restaurants, and choose from a
-          variety of dishes that cater to your specific taste buds.</p>
-        <ul class="offerings-list">
-          <li class="offerings-list-item">
-            <h3 class="offerings-subtitle">Fasest Delivery</h3>
-            <p class="offerings-list-description">Our advanced logistics system and dedicated delivery partners ensure that
-              your meals are delivered to you within
-              30-minutes.</p>
-          </li>
-          <li class="offerings-list-item">
-            <h3 class="offerings-subtitle">Easy To Order</h3>
-            <p class="offerings-list-description">You can browse through a wide variety of cuisines and restaurants, select
-              your favorite meals, and place your order in
-              just a few clicks.</p>
-          </li>
+      <div class="container offerings-section">
+        <div class="thumb-apple">
+          <div class="thumb-background-apple">
+            <img class="offerings-image" src="./img/apple.png" alt="Picture with apple" width="396">
+          </div>
+        </div>
+        <div class="offerings-content">
+          <h2 class="title offerings-title">What’s Special About Our Offerings</h2>
+          <p class="offerings-description">With our platform, you can browse through a diverse selection of cuisines and local
+            restaurants, and choose from a
+            variety of dishes that cater to your specific taste buds.</p>
+          <ul class="offerings-list">
+            <li class="offerings-list-item">
+              <svg class="list-item-icons">
+                <use href="./img/icons/sprite.svg#icon-rocket" width="32" height="32"></use>
+              </svg>
+              <h3 class="offerings-subtitle">Fasest Delivery</h3>
+              <p class="offerings-list-description">Our advanced logistics system and dedicated delivery partners ensure that
+                your meals are delivered to you within
+                30-minutes.</p>
+            </li>
+            <li class="offerings-list-item">
+              <svg class="list-item-icons">
+                <use href="./img/icons/sprite.svg#icon-touch" width="32" height="32"></use>
+              </svg>
+              <h3 class="offerings-subtitle">Easy To Order</h3>
+              <p class="offerings-list-description">You can browse through a wide variety of cuisines and restaurants, select
+                your favorite meals, and place your order in
+                just a few clicks.</p>
+            </li>
+          </ul>
           <button class="button secondary-button" type="button">Order Now</button>
-        </ul>
+        </div>
       </div>
     </section>
     <section class="favorites">
