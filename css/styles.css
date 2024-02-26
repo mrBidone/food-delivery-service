@@ -251,10 +251,58 @@ section:nth-child(even) {
 }
 
 /* =============== Customer`s reviews section =============== */
+.customers-reviews {
+    padding-top: 140px;
+    padding-bottom: 126px;
+}
+.reviews-title {
+    margin-bottom: 20px;
+} 
+
+.reviews-list {
+    display: flex;
+    margin-top: 33px;
+    column-gap: 139px;
+}
+
+.reviews-list-item {
+    max-width: 501px;
+    background-color: #fefefe;
+    border-radius: 0 30px 30px 30px;;
+    padding: 14px;
+
+}
+
+.rating-list {
+    display: flex;
+    column-gap: 4px;
+    margin-bottom: 29px;
+}
+
+.list-rating-item {
+    fill: #ffe550;
+}
 
 .reviews-description {
     font-weight: 700;
     font-size: 18px;
+    margin-bottom: 41px;
+}
+
+.users-flexcontainer {
+    display: flex;
+}
+
+/* .users-flexcontainer::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #7eb101;
+    transform: rotate(-90deg);
+} */
+
+.userpic {
+    margin-right: 16px;
 }
 
 .username {
