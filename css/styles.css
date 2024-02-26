@@ -36,7 +36,8 @@ section:nth-child(even) {
 }
 
 .container {
-    max-width: 1248px;
+    max-width: 1286px;
+    padding: 0 19px;
     margin: 0 auto; 
 }
 
@@ -221,6 +222,20 @@ section:nth-child(even) {
 }
 
 /* =============== Our Favorites section =============== */
+.favorites{ 
+    padding-top: 120px;
+    padding-bottom: 101px;
+}
+/* НЕ СПРАЦЬОВУЄ МАРДЖИН ДЛЯ ЦЕНТРУВАННЯ ЗАГОЛОВКУ!!!!! РОЗІБРАТИСЬ!!!!!  */
+.favorites-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.favorites-description {
+    text-align: center;
+    margin-bottom: 40px;
+}
 
 .favorites-list {
     display: flex;
