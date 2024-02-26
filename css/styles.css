@@ -150,7 +150,7 @@ section:nth-child(even) {
     background-color: #fefefe;
     border-radius: 100%;
     position: absolute;
-    padding: 24px 24px;
+    /* padding: 24px 24px; */
 }
 
 .offerings-image {
@@ -183,8 +183,16 @@ section:nth-child(even) {
     width: 48px;
     height: 48px;
     background-color: #fefefe;
-    border-radius: 100%;
+    border-radius: 50%;
+    margin-bottom: 8px;
 }
+
+.offerings-icon {
+    display: block;
+    fill: #7eb101;
+}
+
+
 
 .offerings-subtitle {
     font-size: 18px;
