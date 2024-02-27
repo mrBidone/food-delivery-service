@@ -135,7 +135,7 @@
               No questions asked”</p>
               <div class="users-flexcontainer">
                 <img class="userpic" src="./img/sumith-shah-man.png" alt="User`s picture" width="48" height="48">
-                <div>
+                <div class="username-container">
                   <h3 class="username">Sumith Shah</h3>
                   <p class="username-description">Some Dude</p>
                 </div>
@@ -173,49 +173,62 @@
               been
               a very pleasant experience ordering
               from this app”</p>
-            <img class="userpic" src="./img/sumith-shah-girl.png" alt="User`s picture" width="48" height="48">
-            <h3 class="username">Sumith Shah</h3>
-            <p class="username-description">Some Dude</p>
+              <div class="users-flexcontainer">
+                <img class="userpic" src="./img/sumith-shah-girl.png" alt="User`s picture" width="48" height="48">
+                <div class="username-container">
+                  <h3 class="username">Sumith Shah</h3>
+                  <p class="username-description">Some Dude</p>
+                </div>
+              </div>
           </li>
         </ul>
       </div>
     </section>
     <section class="subscribe">
-      <div class="container">
-        <h2 class="title">Subscribe To Get Special Offers</h2>
-        <p class="subscribe-description">Order now and receive 10% off your first meal with Enjoy Your Favorite Food From
-          Anywhere.</p>
-        <button type="submit">Enter your email</button>
-        <button class="button main-button" type="button">Subscribe</button>
-        <img src="./img/banan.png" alt="Picture with a banane">
+      <div class="container subscribe-container">
+        <div class="subscribe-flexcontainer">
+          <h2 class="title subscribe-title">Subscribe To Get Special Offers</h2>
+          <p class="subscribe-description">Order now and receive 10% off your first meal with Enjoy Your Favorite Food From
+            Anywhere.</p>
+          <div class="input-container">
+            <input class="subscribe-input" type="email" placeholder="Enter your email" />
+            <button class="button main-button subscribe-button" type="button">Subscribe</button>
+          </div>
+        </div>
+        <img src="./img/banan.png" alt="Picture with a banane" width="608">
       </div>
     </section>  
   </main>
   <footer>
-    <div class="container">
-      <a class="logo"><img src="./img/logo.png" alt="Logotype FoodSta"></a>
-      <ul class="footer-nav-list">
-        <li class="nav-list"><a class="nav-link" href="./index.html">Home</a></li>
-        <li class="nav-list"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-list"><a class="nav-link" href="#service">Service</a></li>
-        <li class="nav-list"><a class="nav-link" href="#menu">Menu</a></li>
-        <li class="nav-list"><a class="nav-link" href="">Contact</a></li>
-      </ul>
-      <div class="footer-subscribe-block">
-        <p class="footer-subscribe-title">Subscribe</p>
-        <button type="submit">Enter your email</button>
-        <button class="button secondary-button" type="button">Subscribe</button>
-        <p class="footer-subscribe-description">By subscribing you agree to with our</p>
-        <a class="privacy-link" href="">Privacy Policy</a>
+    <div class="container footer-container">
+      <div class="footer-flexcontainer">
+        <div class="footer-nav">
+          <a class="logo"><img src="./img/logo.png" alt="Logotype FoodSta"></a>
+          <ul class="footer-nav-list">
+            <li class="nav-list"><a class="nav-link" href="./index.html">Home</a></li>
+            <li class="nav-list"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-list"><a class="nav-link" href="#service">Service</a></li>
+            <li class="nav-list"><a class="nav-link" href="#menu">Menu</a></li>
+            <li class="nav-list"><a class="nav-link" href="">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-subscribe-block">
+          <p class="footer-subscribe-title">Subscribe</p>
+          <div class="input-container footer-input-container">
+            <input class="subscribe-input footer-input" type="email" placeholder="Enter your email" />
+            <button class="button secondary-button subscribe-button" type="button">Subscribe</button>
+          </div>
+          <p class="footer-subscribe-description">By subscribing you agree to with our&nbsp;<a class="privacy-link" href="">Privacy Policy</a></p>
+        </div>
       </div>
       <div class="privacy-block">
-        <ul class="pivacy-list">
+        <ul class="privacy-list">
           <li class="privacy-list-item"><a class="privacy-link" href="">Privacy Policy</a></li>
           <li class="privacy-list-item"><a class="privacy-link" href="">Terms of Service</a></li>
           <li class="privacy-list-item"><a class="privacy-link" href="">Cookies Settings</a></li>
         </ul>
+        <p class="rights-description">2022 FoodSta. All right reserved.</p>
       </div>
-      <p class="rights-description">2022 FoodSta. All right reserved.</p>
     </div>
   </footer>
 </body>
