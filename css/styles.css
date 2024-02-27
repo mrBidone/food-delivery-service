@@ -84,6 +84,11 @@ section:nth-child(even) {
     max-height: 32px;
 }
 
+.main-button:hover,
+.main-button:focus {
+    background-color: #ffe450;
+}
+
 /* =============== Hero section =============== */
 .hero-container {
     display: flex;
@@ -221,6 +226,13 @@ section:nth-child(even) {
     max-height: 40px;
 }
 
+.secondary-button:hover,
+.secondary-button:focus {
+    border: 2px solid #bbf330;
+    background-color: #bbf330;
+}
+
+
 /* =============== Our Favorites section =============== */
 .favorites{ 
     padding-top: 120px;
@@ -248,6 +260,10 @@ section:nth-child(even) {
     border: 16px solid #ffe550;
     border-radius: 197px;
     padding: 24px 24px;
+}
+
+.favorites-list-item:hover {
+    border: 16px solid #bbf330;
 }
 
 /* =============== Customer`s reviews section =============== */
@@ -410,6 +426,12 @@ section:nth-child(even) {
 
 .footer-input-container .subscribe-button {
     border: 0.85px solid #7eb101;
+}
+
+.footer-input-container .subscribe-button:hover,
+.footer-input-container .subscribe-button:focus {
+    border: 0.85px solid #ffe450;
+    background-color: #fefefe;
 }
 
 .footer-subscribe-description {
