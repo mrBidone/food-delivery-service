@@ -35,7 +35,7 @@
             doorstep, no matter where you
             are.
             Order now and enjoy a hassle-free and delicious meal from the comfort of your own home.</p>
-          <button class="button main-button" type="button">Order Now</button>
+          <button class="button main-button" type="button" data-modal-open>Order Now</button>
         </div>
         <div class="image-thumb">
           <img class="hero-image" src="./img/hero.png" alt="Picture with salad" width="528" height="528">
@@ -214,10 +214,10 @@
         </div>
         <div class="footer-subscribe-block">
           <p class="footer-subscribe-title">Subscribe</p>
-          <div class="input-container footer-input-container">
-            <input class="subscribe-input footer-input" type="email" placeholder="Enter your email" />
-            <button class="button secondary-button subscribe-button" type="button">Subscribe</button>
-          </div>
+            <form class="input-container footer-input-container">
+              <input class="subscribe-input footer-input" type="email" placeholder="Enter your email" />
+              <button class="button secondary-button subscribe-button" type="button">Subscribe</button>
+            </form>
           <p class="footer-subscribe-description">By subscribing you agree to with our&nbsp;<a class="privacy-link" href="">Privacy Policy</a></p>
         </div>
       </div>
@@ -231,5 +231,34 @@
       </div>
     </div>
   </footer>
+  <div class="backdrop" data-modal>
+    <div class="modal">
+      <button class="modal-close-btn" data-modal-close>
+        <svg width="11" height="11">
+          <use href="./img/icons/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <p class="modal-title">Order Form</p>
+      <form action="">
+        <div class="modal-input-wrap">
+          <lable class="lable-form">Name
+          <input type="text" class="input-form" placeholder="Your name">
+          </lable>
+        </div>
+        <div class="modal-input-wrap">
+          <lable class="lable-form">Phone number
+          <input type="tel" class="input-form" placeholder="+38(0_ _) _ _ _   _ _   _ _">
+          </lable>
+        </div>
+        <div class="modal-input-wrap">
+          <lable class="lable-form">E-mail
+          <input type="email" class="input-form" placeholder="example@gmail.com">
+          </lable>
+        </div>
+        <button type="submit" class="modal-btn button secondary-button">Send</button>
+      </form>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 </html>
