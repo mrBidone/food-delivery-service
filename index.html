@@ -11,43 +11,67 @@
   <title>FoodSta - Your favorite FOOD from Anywhere</title>
 </head>
 <body>
-  <header class="page-header">
-    <div class="container header-container">
-      <a class="logo" href="./index.html"><img src="./img/logo.png" alt="logo" width="66" height="52"></a>
-      <nav class="page-nav">
-        <ul class="page-nav-list">
-          <li class="nav-list-item"><a class="nav-link" href="./index.html">Home</a></li>
-          <li class="nav-list-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-list-item"><a class="nav-link" href="#service">Service</a></li>
-          <li class="nav-list-item"><a class="nav-link" href="#menu">Menu</a></li>
-          <li class="nav-list-item"><a class="nav-link" href="">Contact</a></li>
-        </ul>
-      </nav>
-      <button class="button main-button" type="button">Order Now</button>
+  <header class="page-header container">
+    <div class="header-container">
+      <a class="logo" href="./index.html"><img src="./img/desk/logo.png" alt="logo" width="66" height="52"></a>
+      <div class="page-nav-wrapper">
+        <nav class="page-nav">
+          <ul class="page-nav-list">
+            <li class="nav-list-item"><a class="nav-link" href="./index.html">Home</a></li>
+            <li class="nav-list-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-list-item"><a class="nav-link" href="#service">Service</a></li>
+            <li class="nav-list-item"><a class="nav-link" href="#menu">Menu</a></li>
+            <li class="nav-list-item"><a class="nav-link" href="">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="button main-button" type="button">Order Now</button>
+      </div>
+      <button class="button-burger">
+        <svg class="icon-burger" width="28" height="28">
+          <use href="./img/icons/sprite.svg#icon-burgermenu"></use>
+        </svg>
+      </button>
     </div>
   </header>
   <main>
-    <section class="hero">
-      <div class="container hero-container">
-        <div class="hero-main">
-          <h1 class="main-title">Enjoy Your Favorite Food From Anywhere</h1>
-          <p class="hero-description">With just a few clicks, you can have your favorite meals delivered straight to your
-            doorstep, no matter where you
-            are.
-            Order now and enjoy a hassle-free and delicious meal from the comfort of your own home.</p>
-          <button class="button main-button" type="button" data-modal-open>Order Now</button>
+
+<!-- ===================== HERO SECTION =================== -->
+
+
+    <section class="hero container">
+      <div class="hero-container">
+        <h1 class="main-title">Enjoy Your Favorite Food From Anywhere</h1>
+        <div class="hero-wrapper">
+          <div class="hero-main">
+            <p class="hero-description">With just a few clicks, you can have your favorite meals delivered straight to your
+              doorstep, no matter where you
+              are.
+              Order now and enjoy a hassle-free and delicious meal from the comfort of your own home.</p>
+            <button class="button main-button" type="button" data-modal-open>Order Now</button>
+          </div>
+          <div class="image-thumb">
+            <picture class="hero-image">
+              <source srcset="
+                          ./img/desk/hero.png 1x,
+                          ./img/desk/hero.png 2x," media="(min-width: 1158px)">
+              <source srcset="
+                          ./img/tab/Foto-1.png 1x,
+                          ./img/tab/Foto-1@2x.png 2x," media="(min-width: 768px)">
+              <img src="./img/desk/hero.png" alt="Picture with salad">
+          </div>
         </div>
-        <div class="image-thumb">
-          <img class="hero-image" src="./img/hero.png" alt="Picture with salad" width="528" height="528">
-        </div>
-        
       </div>
     </section>
-    <section class="offerings">
+
+
+    <!-- ===================== OFFERINGS SECTION =================== -->
+
+
+    <!-- <section class="offerings">
       <div class="container offerings-section">
         <div class="thumb-apple">
           <div class="thumb-background-apple">
-            <img class="offerings-image" src="./img/apple.png" alt="Picture with apple" width="396">
+            <img class="offerings-image" src="./img/desk/apple.png" alt="Picture with apple" width="396">
           </div>
         </div>
         <div class="offerings-content">
@@ -82,22 +106,28 @@
           <button class="button secondary-button" type="button">Order Now</button>
         </div>
       </div>
-    </section>
-    <section class="favorites">
+    </section> -->
+
+<!-- ===================== FAVORITES SECTION =================== -->
+    <!-- <section class="favorites">
       <div class="container">
         <h2 class="title favorites-title">Some of Our Favorites</h2>
         <p class="favorites-description">Looking for something delicious?</p>
         <ul class="favorites-list">
-          <li class="favorites-list-item"><img src="./img/gamburger.png" alt="Picture with a burger"></li>
-          <li class="favorites-list-item"><img src="./img/pasta.png" alt="Picture with a pasta"></li>
-          <li class="favorites-list-item"><img src="./img/pizza.png" alt="Picture with a pizza"></li>
-          <li class="favorites-list-item"><img src="./img/chicken.png" alt="Picture with rise and chicken"></li>
-          <li class="favorites-list-item"><img src="./img/salat-second.png" alt="Picture with a fish and salad"></li>
-          <li class="favorites-list-item"><img src="./img/borshch.png" alt="Picture with a borsch"></li>
+          <li class="favorites-list-item"><img src="./img/desk/gamburger.png" alt="Picture with a burger"></li>
+          <li class="favorites-list-item"><img src="./img/desk/pasta.png" alt="Picture with a pasta"></li>
+          <li class="favorites-list-item"><img src="./img/desk/pizza.png" alt="Picture with a pizza"></li>
+          <li class="favorites-list-item"><img src="./img/desk/chicken.png" alt="Picture with rise and chicken"></li>
+          <li class="favorites-list-item"><img src="./img/desk/salat-second.png" alt="Picture with a fish and salad"></li>
+          <li class="favorites-list-item"><img src="./img/desk/borshch.png" alt="Picture with a borsch"></li>
         </ul>
       </div>
-    </section>
-    <section class="customers-reviews">
+    </section> -->
+
+
+<!-- ===================== REVIEWS SECTION =================== -->
+
+    <!-- <section class="customers-reviews">
       <div class="container">
         <h2 class="title reviews-title">What our Customers Say</h2>
         <p>Don't just take our word for it - see what our satisfied customers have to say</p>
@@ -134,7 +164,7 @@
               too, I would recommend to a freind,
               No questions asked”</p>
               <div class="users-flexcontainer">
-                <img class="userpic" src="./img/sumith-shah-man.png" alt="User`s picture" width="48" height="48">
+                <img class="userpic" src="./img/desk/sumith-shah-man.png" alt="User`s picture" width="48" height="48">
                 <div class="username-container">
                   <h3 class="username">Sumith Shah</h3>
                   <p class="username-description">Some Dude</p>
@@ -174,7 +204,7 @@
               a very pleasant experience ordering
               from this app”</p>
               <div class="users-flexcontainer">
-                <img class="userpic" src="./img/sumith-shah-girl.png" alt="User`s picture" width="48" height="48">
+                <img class="userpic" src="./img/desk/sumith-shah-girl.png" alt="User`s picture" width="48" height="48">
                 <div class="username-container">
                   <h3 class="username">Sumith Shah</h3>
                   <p class="username-description">Some Dude</p>
@@ -183,8 +213,11 @@
           </li>
         </ul>
       </div>
-    </section>
-    <section class="subscribe">
+    </section> -->
+
+
+<!-- ===================== SUBSCRIBE SECTION =================== -->
+    <!-- <section class="subscribe">
       <div class="container subscribe-container">
         <div class="subscribe-flexcontainer">
           <h2 class="title subscribe-title">Subscribe To Get Special Offers</h2>
@@ -195,15 +228,17 @@
             <button class="button main-button subscribe-button" type="button">Subscribe</button>
           </div>
         </div>
-        <img src="./img/banan.png" alt="Picture with a banane" width="608">
+        <img src="./img/desk/banan.png" alt="Picture with a banane" width="608">
       </div>
-    </section>  
+    </section>   -->
   </main>
-  <footer class="page-footer">
+
+<!-- ===================== FOOTER SECTION =================== -->
+  <!-- <footer class="page-footer">
     <div class="container footer-container">
       <div class="footer-flexcontainer">
         <div class="footer-nav">
-          <a class="logo"><img src="./img/logo.png" alt="Logotype FoodSta"></a>
+          <a class="logo"><img src="./img/desk/logo.png" alt="Logotype FoodSta"></a>
           <ul class="footer-nav-list">
             <li class="nav-list"><a class="nav-link" href="./index.html">Home</a></li>
             <li class="nav-list"><a class="nav-link" href="#about">About</a></li>
@@ -230,7 +265,7 @@
         <p class="rights-description">2022 FoodSta. All right reserved.</p>
       </div>
     </div>
-  </footer>
+  </footer> -->
   <div class="backdrop" data-modal>
     <div class="modal">
       <button class="modal-close-btn" data-modal-close>

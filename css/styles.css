@@ -31,44 +31,31 @@ body {
     background-color: #fefefe;
 }
 
-section:nth-child(even) {
-    background-color: #ffe550;
+@media only screen and (min-width: 1286px) {
+    section:nth-child(even) {
+        background-color: #ffe550;
+    }
 }
+
 
 .container {
+    max-width: 320px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+   .container{
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media only screen and (min-width: 1286px) {
+    .container{
     max-width: 1286px;
     padding: 0 19px;
-    margin: 0 auto; 
-}
-
-/* =============== Header section =============== */
-.page-header {
-    box-shadow: 0 4px 24px 0 rgba(105, 105, 105, 0.1);
-}
-
-.header-container {
-    display: flex;
-    align-items: center;
-}
-.page-nav {
-    display: flex;
-    margin-left: auto;
-}
-.page-nav-list {
-    display: flex;
-    gap: 28px;
-    margin-right: 30px;
-}
-.nav-link {
-    display: inline-block;
-    font-size: 14px;
-    padding: 28px 0;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-    color: #bbf330;
-    text-decoration: underline;
+  }
 }
 
 .button {
@@ -93,8 +80,143 @@ section:nth-child(even) {
     background-color: #ffe450;
 }
 
+
+
+/* =============== Header section =============== */
+.page-header {
+    box-shadow: 0 4px 24px 0 rgba(105, 105, 105, 0.1);
+}
+
+.page-nav-wrapper {
+    display: none;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    justify-content: space-between;
+}
+
+.button-burger {
+    border: none;
+    cursor: pointer;
+    line-height: 0;
+    background-color: transparent;
+    fill: #7eb101;
+    padding: 0;
+}
+
+.button-burger:focus,
+.button-burger:active {
+    fill: #ffe450;
+}
+
+@media only screen and (min-width: 768px) {
+    .page-nav-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-container {
+        padding: 0;
+    }
+
+    .page-nav-list {
+        display: flex;
+        margin-left: auto;
+        gap: 28px;
+        margin-right: 30px;
+    }
+
+    .nav-link {
+        display: inline-block;
+        font-size: 14px;
+        padding: 28px 0;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus {
+        color: #bbf330;
+        text-decoration: underline;
+    }
+
+
+    .button-burger {
+        display: none;
+    }
+}
+
+
 /* =============== Hero section =============== */
+
 .hero-container {
+    padding-top: 60px;
+    padding-bottom: 45px;
+}
+
+.main-title {
+    max-width: 280px;
+    font-size: 28px;
+    font-weight: 700px;
+    line-height: 1.2;
+    margin-bottom: 28px;
+}
+
+.hero-description {
+    font-size: 14px;
+    line-height: 1.42857;
+    margin-bottom: 32px; 
+}
+
+.image-thumb {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-container {
+        padding-bottom: 21px;
+    }
+
+    .hero-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .main-title {
+        min-width: 537px;
+        font-size: 42px;
+        font-weight: 700px;
+        margin-bottom: 0;
+    }
+
+    .hero-description {
+        max-width: 336px;
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 40px;
+    }
+
+    .image-thumb {
+        display: block;
+        width: 320px;
+        height: 320px;
+        border: 14px solid #ffe550 ;
+        border-radius: 291px;
+        position: abosule;
+    }
+    .hero-image {
+        width: 292px;
+        height: 292px;
+        position: relative;
+        top: 0;
+        left: 0;
+    } 
+}
+
+
+/* .hero-container {
     display: flex;
     padding-top: 14px;
     padding-bottom: 55px;
@@ -130,7 +252,7 @@ section:nth-child(even) {
 .hero-image {
     position: relative;
     transform: translateX(-9px ); 
-}
+} */
 
 /* =============== Our offerings section =============== */
 .offerings-section {
@@ -371,6 +493,12 @@ section:nth-child(even) {
     border-radius: 30px;
     padding: 12px 11px;
     outline: transparent;
+    transition: border-color 250ms ease-in;
+}
+
+.subscribe-input:focus,
+.subscribe-input:active {
+    border-color: #bbf330;
 }
 
 .subscribe-input::placeholder {
@@ -391,7 +519,7 @@ section:nth-child(even) {
 
 .footer-container {
     padding: 100px 0;
-    background-image: url(../img/footer-bg.jpg);
+    background-image: url(../img/desk/footer-bg.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
 
