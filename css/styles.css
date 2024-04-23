@@ -178,16 +178,21 @@ body {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: flex-end;
-        height: 450px;
+        position: relative;
+        padding: 60px 0 42px 0;
     }
+
     .hero-main {
         max-width: 336px;
+        padding-top: 44px;
         padding-bottom: 73px;
     }
     .main-title {
         max-width: 537px;
         font-size: 42px;
         font-weight: 700px;
+        margin-bottom: 0;
+    
     }
 
     .hero-description {
@@ -196,14 +201,18 @@ body {
         margin-bottom: 40px;
     }
 
-    .image-thumb {
+    .slider {
+        position: absolute;
+        right: 8px;
+    }
 
+    .image-thumb {
         display: block;
         width: 320px;
         height: 320px;
         border: 14px solid #ffe550 ;
         border-radius: 291px;
-        position: abosule;
+        position: abosute;
     }
     .hero-image {
         width: 292px;
@@ -214,44 +223,47 @@ body {
     } 
 }
 
+@media only screen and (min-width: 1286px) {
+    .hero-container {
+        display: flex;
+        padding-top: 14px;
+        padding-bottom: 55px;
+    }
 
-/* .hero-container {
-    display: flex;
-    padding-top: 14px;
-    padding-bottom: 55px;
+    .main-title {
+        padding-top: 145px;
+        max-width: 502px;
+        font-size: 48px;
+        line-height: 1.2;
+        margin-bottom: 28px;
+    }
+    
+    .hero-main {
+        margin-right: 143px;
+        max-width: 511px;
+    }
+    
+    .hero-description {
+        line-height: 1.5;
+        margin-bottom: 40px;
+    }
+    
+    .image-thumb {
+        width: 580px;
+        height: 580px;
+        border: 26px solid #ffe550 ;
+        border-radius: 291px;
+        position: abosule;
+    }
+    
+    .hero-image {
+        width: 528px;
+        position: relative;
+        transform: translateX(-9px ); 
+    }
 }
 
-.hero-main {
-    padding-top: 145px;
-    padding-bottom: 164px;
-    margin-right: 143px;
-}
 
-.main-title {
-    max-width: 502px;
-    font-size: 48px;
-    line-height: 1.2;
-    margin-bottom: 28px;
-}
-
-.hero-description {
-    max-width: 511px;
-    line-height: 1.5;
-    margin-bottom: 40px;
-}
-
-.image-thumb {
-    width: 580px;
-    height: 580px;
-    border: 26px solid #ffe550 ;
-    border-radius: 291px;
-    position: abosule;
-}
-
-.hero-image {
-    position: relative;
-    transform: translateX(-9px ); 
-} */
 
 /* =============== Our offerings section =============== */
 .offerings-section {
