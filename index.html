@@ -50,17 +50,17 @@
           </div>
           <div class="slider">
             <div class="image-thumb">
-              <picture class="hero-image">
+              <picture>
                 <source srcset="
                                       ./img/desk/hero.png 1x,
                                       ./img/desk/hero.png 2x," media="(min-width: 1286px)">
                 <source srcset="
                                       ./img/tab/Foto-1.png 1x,
                                       ./img/tab/Foto-1@2x.png 2x," media="(min-width: 768px)">
-                <img src="./img/desk/hero.png" alt="Picture with salad">
+                <img class="hero-image" src="./img/desk/hero.png" alt="Picture with salad">
+              </picture>
             </div>
           </div>
-            
       </div>
     </section>
 
@@ -68,12 +68,21 @@
     <!-- ===================== OFFERINGS SECTION =================== -->
 
 
-    <!-- <section class="offerings">
+    <section class="offerings">
       <div class="container offerings-section">
         <div class="thumb-apple">
-          <div class="thumb-background-apple">
-            <img class="offerings-image" src="./img/desk/apple.png" alt="Picture with apple" width="396">
-          </div>
+            <picture>
+                <source srcset="
+                                      ./img/desk/Apple.png 1x,
+                                      ./img/desk/Apple@2x.png 2x," media="(min-width: 1286px)">
+                <source srcset="
+                                      ./img/tab/Apple.png 1x,
+                                      ./img/tab/Apple@2x.png 2x," media="(min-width: 768px)">
+                <source srcset="
+                                      ./img/mob/Apple.png 1x,
+                                      ./img/mob/Apple@2x.png 2x," media="(max-width: 767px)">
+                <img class="offerings-image" src="./img/desk/Apple.png" alt="Apple illustration">
+            </picture>
         </div>
         <div class="offerings-content">
           <h2 class="title offerings-title">What’s Special About Our Offerings</h2>
@@ -107,23 +116,101 @@
           <button class="button secondary-button" type="button">Order Now</button>
         </div>
       </div>
-    </section> -->
+    </section>
 
 <!-- ===================== FAVORITES SECTION =================== -->
-    <!-- <section class="favorites">
+    <section class="favorites">
       <div class="container">
         <h2 class="title favorites-title">Some of Our Favorites</h2>
         <p class="favorites-description">Looking for something delicious?</p>
         <ul class="favorites-list">
-          <li class="favorites-list-item"><img src="./img/desk/gamburger.png" alt="Picture with a burger"></li>
-          <li class="favorites-list-item"><img src="./img/desk/pasta.png" alt="Picture with a pasta"></li>
-          <li class="favorites-list-item"><img src="./img/desk/pizza.png" alt="Picture with a pizza"></li>
-          <li class="favorites-list-item"><img src="./img/desk/chicken.png" alt="Picture with rise and chicken"></li>
-          <li class="favorites-list-item"><img src="./img/desk/salat-second.png" alt="Picture with a fish and salad"></li>
-          <li class="favorites-list-item"><img src="./img/desk/borshch.png" alt="Picture with a borsch"></li>
+          <li class="favorites-list-item">
+            <picture>
+                <source srcset="
+                                      ./img/desk/hamburger.png 1x,
+                                      ./img/desk/hamburger@2x.png 2x," media="(min-width: 1286px)">
+                <source srcset="
+                                      ./img/tab/hamburger.png 1x,
+                                      ./img/tab/hamburger@2x.png 2x," media="(min-width: 768px)">
+                <source srcset="
+                                      ./img/mob/hamburger.png 1x,
+                                      ./img/mob/hamburger@2x.png 2x," media="(max-width: 767px)">
+                <img class="offerings-image" src="./img/desk/hamburger.png" alt="Picture with a burger">
+            </picture>
+          </li>
+          <li class="favorites-list-item">
+            <picture>
+                <source srcset="
+                                      ./img/desk/pasta.png 1x,
+                                      ./img/desk/pasta@2x.png 2x," media="(min-width: 1286px)">
+                <source srcset="
+                                      ./img/tab/pasta.png 1x,
+                                      ./img/tab/pasta@2x.png 2x," media="(min-width: 768px)">
+                <source srcset="
+                                      ./img/mob/pasta.png 1x,
+                                      ./img/mob/pasta@2x.png 2x," media="(max-width: 767px)">
+                <img class="offerings-image" src="./img/desk/pasta.png" alt="Picture with a pasta">
+            </picture>
+          </li>
+          <li class="favorites-list-item">
+            <picture>
+                <source srcset="
+                                      ./img/desk/pizza.png 1x,
+                                      ./img/pizza@2x.png 2x," media="(min-width: 1286px)">
+                <source srcset="
+                                      ./img/tab/pizza.png 1x,
+                                      ./img/tab/pizza@2x.png 2x," media="(min-width: 768px)">
+                <source srcset="
+                                      ./img/mob/pizza.png 1x,
+                                      ./img/mob/pizza@2x.png 2x," media="(max-width: 767px)">
+                <img class="offerings-image" src="./img/desk/pizza.png" alt="Picture with a pizza">
+            </picture>
+          </li>
+          <li class="favorites-list-item removed">
+            <picture>
+                <source srcset="
+                                      ./img/desk/chicken.png 1x,
+                                      ./img/desk/chicken@2x.png 2x," media="(min-width: 1286px)">
+                <source srcset="
+                                      ./img/tab/chicken.png 1x,
+                                      ./img/tab/chicken@2x.png 2x," media="(min-width: 768px)">
+                <source srcset="
+                                      ./img/tab/chicken.png 1x,
+                                      ./img/tab/chicken@2x.png 2x," media="(max-width: 767px)">
+                <img class="offerings-image" src="./img/desk/chicken.png" alt="Picture with a chicken">
+            </picture>
+          </li>
+          <li class="favorites-list-item removed">
+            <picture>
+                <source srcset="
+                                      ./img/desk/salat-second.png 1x,
+                                      ./img/desk/salat-second@2x.png 2x," media="(min-width: 1286px)">
+                <source srcset="
+                                      ./img/tab/salat-second.png 1x,
+                                      ./img/tab/salat-second@2x.png 2x," media="(min-width: 768px)">
+                <source srcset="
+                                      ./img/tab/salat-second.png 1x,
+                                      ./img/tab/salat-second@2x.png 2x," media="(max-width: 767px)">
+                <img class="offerings-image" src="./img/desk/salat-second.png" alt="Picture with a fish and salad">
+            </picture>
+          </li>
+          <li class="favorites-list-item removed">
+            <picture>
+                <source srcset="
+                                      ./img/desk/borshch.png 1x,
+                                      ./img/desk/borshch@2x.png 2x," media="(min-width: 1286px)">
+                <source srcset="
+                                      ./img/tab/borshch.png 1x,
+                                      ./img/tab/borshch@2x.png 2x," media="(min-width: 768px)">
+                <source srcset="
+                                      ./img/tab/borshch.png 1x,
+                                      ./img/tab/borshch@2x.png 2x," media="(max-width: 767px)">
+                <img class="offerings-image" src="./img/desk/borshch.png" alt="Picture with a borsch">
+            </picture>
+          </li>
         </ul>
       </div>
-    </section> -->
+    </section>
 
 
 <!-- ===================== REVIEWS SECTION =================== -->
@@ -267,7 +354,7 @@
       </div>
     </div>
   </footer> -->
-  <div class="backdrop" data-modal>
+  <!-- <div class="backdrop" data-modal>
     <div class="modal">
       <button class="modal-close-btn" data-modal-close>
         <svg width="11" height="11">
@@ -295,6 +382,6 @@
       </form>
     </div>
   </div>
-  <script src="./js/modal.js"></script>
+  <script src="./js/modal.js"></script> -->
 </body>
 </html>

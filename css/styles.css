@@ -112,6 +112,19 @@ body {
     fill: #ffe450;
 }
 
+.secondary-button {
+    background-color: #ffffff;
+    border: 2px solid #7eb101;
+    padding: 10px 20px;
+    max-height: 40px;
+}
+
+.secondary-button:hover,
+.secondary-button:focus {
+    border: 2px solid #bbf330;
+    background-color: #bbf330;
+}
+
 @media only screen and (min-width: 768px) {
     .page-nav-wrapper {
         display: flex;
@@ -179,7 +192,7 @@ body {
         flex-wrap: wrap;
         justify-content: flex-end;
         position: relative;
-        padding: 60px 0 42px 0;
+        padding: 60px 0 21px 0;
     }
 
     .hero-main {
@@ -212,12 +225,12 @@ body {
         height: 320px;
         border: 14px solid #ffe550 ;
         border-radius: 291px;
-        position: abosute;
+        position: relative;
     }
     .hero-image {
         width: 292px;
         height: 292px;
-        position: relative;
+        position: absolute;
         top: 0;
         left: 0;
     } 
@@ -226,8 +239,7 @@ body {
 @media only screen and (min-width: 1286px) {
     .hero-container {
         display: flex;
-        padding-top: 14px;
-        padding-bottom: 55px;
+        padding-bottom: 69px;
     }
 
     .main-title {
@@ -253,12 +265,13 @@ body {
         height: 580px;
         border: 26px solid #ffe550 ;
         border-radius: 291px;
-        position: abosule;
+        position: relative;
     }
     
     .hero-image {
         width: 528px;
-        position: relative;
+        height: 528px;
+        position: absolute;
         transform: translateX(-9px ); 
     }
 }
@@ -266,73 +279,103 @@ body {
 
 
 /* =============== Our offerings section =============== */
-.offerings-section {
-    padding-top: 113px;
-    padding-bottom: 124px;
-    display: flex;
-    align-items: center;
+
+.offerings {
+    padding: 45px 0 65px 0;
 }
 
 .thumb-apple {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 550px;
-    height: 550px;
-    border: 5px solid rgba(255, 255, 255, 0.5);
-    border-radius: 100%;
-    margin-right: 90px;
-} 
-
-.thumb-background-apple {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 502px;
-    height: 502px;
-    background-color: #fefefe;
-    border-radius: 100%;
-    position: absolute;
-    /* padding: 24px 24px; */
-}
-
-.offerings-image {
-    display: block;
-    position: relative;
-    transform: translateY(-79px);
-} 
-.offerings-content {
-    margin-right: 51px;
+    margin-bottom: 60px;
 }
 
 .offerings-title {
-    max-width: 526px;
-    margin-bottom: 20px;
+   font-size: 28px;
+   margin-bottom: 28px; 
 }
 
-.offerings-list {
-    display: flex;
-    column-gap: 67px;
-}
-.offerings-list-item {
-    max-width: 253px;
-    margin-bottom: 32px;
+.offerings-description {
+    font-size: 14px;
+    line-height: 1.43;
+    margin-bottom: 28px;
 }
 
 .list-item-icons {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    fill: #7EB101;
+    margin-bottom: 16px;
     width: 48px;
     height: 48px;
+}
+
+.offerings-subtitle {
+    font-size: 18px;
+    margin-bottom: 16px;   
+}
+
+.offerings-list-description {
+    font-size: 14px;
+    line-height: 1.43;
+    margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+.offerings {
+        padding: 21px 0 94px 0;
+  }
+.offerings-title {
+    font-size: 42px;
+    max-width: 526px;
+    margin-bottom: 20px;
+}
+
+.offerings-description {
+    max-width: 500px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.offerings-list {
+    display: flex;
+    gap: 80px;
+}
+.offerings-list-item {
+    max-width: 252px;
+}
+}
+@media only screen and (min-width: 1286px) {
+.offerings {
+    padding-top: 113px;
+    padding-bottom: 124px;
+}
+
+.thumb-apple {
+    margin-bottom: 0;
+}
+
+.offerings-content {
+    margin-right: 51px;
+}
+
+.offerings-section {
+    display: flex;
+    gap: 90px;
+    align-items: center;
+}
+
+.offerings-list {
+    column-gap: 67px;
+    margin-bottom: 32px;
+}
+
+.list-item-icons {
     background-color: #fefefe;
     border-radius: 50%;
     margin-bottom: 8px;
     fill: #7eb101;
 }
-
-
-
 .offerings-subtitle {
     font-size: 18px;
     line-height: 1.4;
@@ -350,33 +393,39 @@ body {
     margin-bottom: 40px;
 }
 
-
 .offerings-list-description {
-    font-size: 14px;
     line-height: 1.5;
+    margin: 0;
 }
-
-.secondary-button {
-    background-color: #ffffff;
-    border: 2px solid #7eb101;
-    padding: 10px 20px;
-    max-height: 40px;
 }
-
-.secondary-button:hover,
-.secondary-button:focus {
-    border: 2px solid #bbf330;
-    background-color: #bbf330;
-}
-
 
 /* =============== Our Favorites section =============== */
-.favorites{ 
+
+.favorites {
+    padding: 60px 0 60px 0;
+}
+
+.favorites-title {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.favorites-description {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 76px;
+}
+
+
+
+
+/* .favorites{ 
     padding-top: 120px;
     padding-bottom: 101px;
-}
+} */
 /* НЕ СПРАЦЬОВУЄ МАРДЖИН ДЛЯ ЦЕНТРУВАННЯ ЗАГОЛОВКУ!!!!! РОЗІБРАТИСЬ!!!!!  */
-.favorites-title {
+/* .favorites-title {
     text-align: center;
     margin-bottom: 20px;
 }
@@ -401,7 +450,7 @@ body {
 
 .favorites-list-item:hover {
     border: 16px solid #bbf330;
-}
+} */
 
 /* =============== Customer`s reviews section =============== */
 .customers-reviews {
